@@ -14,14 +14,14 @@
 		<script>
   
 			var ex=document.getElementById("user1");
-			var ctx=ex.getContext("2d");  
-			const PI=3.14;			
+			var ctx=ex.getContext("2d");            
+			const PI=3.14;			                
 			
 			
-			ctx.moveTo(1000,500);    
-			ctx.lineTo(1000,100);   
-			ctx.strokeStyle= "red";
-			ctx.stroke();
+			ctx.moveTo(1000,500);                 
+			ctx.lineTo(1000,100);                 
+			ctx.strokeStyle= "red";               
+			ctx.stroke();                          
 			
 			
 			ctx.strokeStyle="black";
@@ -40,17 +40,50 @@
 			ctx.fill();
 			ctx.stroke();
 			
-			ctx.beginPath();
-			ctx.moveTo(2000,610);
-			ctx.lineTo(2000,1860);
+			
+			ctx.beginPath();        
+			ctx.moveTo(2000,610);   
+			ctx.lineTo(2000,1860);  
 			ctx.strokeStyle="white";
+			ctx.stroke();           
+			
+			
+			ctx.beginPath();                   
+			ctx.strokeStyle="white";           
+			ctx.lineWidth=8;                   
+			ctx.strokeRect(1100,610,1850,1250);
+			
+				
+			
+			ctx.strokeStyle="white";
+			ctx.lineWidth=8;
+			ctx.beginPath();
+	       	ctx.strokeRect(2600,1000,350,500); 
+			
+			
+			ctx.strokeStyle="white";
+			ctx.lineWidth=8;
+			ctx.beginPath();
+	       	ctx.strokeRect(1100,1000,350,500);
+			
+			
+            ctx.strokeStyle="white";
+			ctx.lineWidth=8;
+			ctx.beginPath();
+			ctx.arc(1095,605,100,0,0.5*PI);
 			ctx.stroke();
 			
 			
-			ctx.beginPath();
 			ctx.strokeStyle="white";
 			ctx.lineWidth=8;
-			ctx.strokeRect(1100,610,1850,1250);
+			ctx.beginPath();
+			ctx.arc(1095,1864,100,0,-0.5*PI,true);
+			ctx.stroke();
+			
+			
+			
+			
+			
 			
 			
 			
