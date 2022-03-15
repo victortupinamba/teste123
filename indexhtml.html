@@ -1,0 +1,61 @@
+<!DOCTYPE html>      
+<html lang= "pt-br"> 
+<head>
+<title>jogostosos</title>
+<meta charge="UTF-8"/>
+<meta name="viewport" content="width=device-Initial scale 1.0" />
+<link rel=stylesheet" type="text/css" href="estilo.css" />
+
+</head>
+<body>
+	<canvas id="user1" width="3000"
+		height="2000">             
+	</canvas>  
+		<script>
+  
+			var ex=document.getElementById("user1");
+			var ctx=ex.getContext("2d");  
+			const PI=3.14;			
+			
+			
+			ctx.moveTo(1000,500);    
+			ctx.lineTo(1000,100);   
+			ctx.strokeStyle= "red";
+			ctx.stroke();
+			
+			
+			ctx.strokeStyle="black";
+			ctx.lineWidth=8;
+			ctx.fillStyle="green";
+			ctx.beginPath();
+	        ctx.fillRect(1080,590,1890,1290);
+			ctx.strokeRect(1080,590,1890,1290); 
+			
+			
+			ctx.strokeStyle="white";
+			ctx.lineWidth=8;
+			ctx.fillStyle= "green";
+			ctx.beginPath();
+			ctx.arc(2000,1250,250,0,2*PI);
+			ctx.fill();
+			ctx.stroke();
+			
+			ctx.beginPath();
+			ctx.moveTo(2000,610);
+			ctx.lineTo(2000,1860);
+			ctx.strokeStyle="white";
+			ctx.stroke();
+			
+			
+			ctx.beginPath();
+			ctx.strokeStyle="white";
+			ctx.lineWidth=8;
+			ctx.strokeRect(1100,610,1850,1250);
+			
+			
+			
+
+			
+		</script>
+</body>
+</html>  
